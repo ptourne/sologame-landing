@@ -101,12 +101,14 @@ Estilo para el div separador */
     align-items: center;
     justify-content: center;
     position: relative;
+    padding: 40px;
 }
 /* Estilo para el video en la sección "Titan" */
 #titan-video {
     width: 100%; /* Ocupa todo el ancho disponible */
     height: 100%; /* Ocupa todo el alto disponible */
     object-fit: cover; /* Escala el video para cubrir todo el contenedor */
+    max-width: 900px;
 }
 
 
@@ -177,7 +179,10 @@ html,
     background-color: #007acc; /* Color de fondo del pulgar en hover */
   }
   
-  
+  .spe {
+    height: 40px; /* Altura del separador (ajusta según sea necesario) */
+    background-color: transparent;
+  }
 
 
 
