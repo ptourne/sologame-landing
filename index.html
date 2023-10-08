@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
+    <link rel="icon" href="logo.png" type="image/png">
+
     <!-- Add Bootstrap CSS link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
     
@@ -104,14 +106,16 @@
     }
             </style>
     <link rel="stylesheet" href="style.css">
-    
+    <!-- Estos enlaces son para la última versión de Swiper -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> 
     <title>SOLO: Surviving on Lost Orbit</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <img id="logo" src="logo.png" alt="SOLO Logo" width="60" height="60">
+            <a class="navbar-brand" href="#Game">
+                <img id="logo" src="logo.png" alt="SOLO Logo" width="45" height="45">
                 Surviving on Lost Orbit
             </a>
             <!-- Add the Bootstrap responsive classes -->
@@ -124,7 +128,7 @@
                         <a class="nav-link" href="#home-section">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Game">Game</a>
+                        <a class="nav-link" href="#Game">Video Game</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#Titan">Titan</a>
@@ -289,7 +293,36 @@ const engine = new Engine(GODOT_CONFIG);
         
     </section>
      <section class="NASA" id="NASA">
-        
+        <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="nave.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="launch.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="galaxia.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="lunarrover.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="original.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="robot.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="sat.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="titan.jpg" />
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
      </section>
 
     <!-- Add Bootstrap JavaScript and jQuery (required for some Bootstrap features) -->

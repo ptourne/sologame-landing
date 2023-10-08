@@ -34,6 +34,39 @@ document.addEventListener('DOMContentLoaded', function () {
   // Iniciar la observación en la sección "Titan"
   observer.observe(titanSection);
 });
+$(document).ready(function () {
+  // Inicializa el carrusel
+  $('#myCarousel').carousel({
+      interval: 2000, // Establece el intervalo en milisegundos (ejemplo: 2 segundos)
+      wrap: true, // Permite la transición continua
+      keyboard: false // Desactiva el control del teclado para evitar interrupciones
+  });
+});
+
+var swiper = new Swiper(".mySwiper", {
+  autoplay: {
+    delay: 1000,
+  },
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  loop: true, // Agrega esta opción para que el carrusel se repita
+});
+
+
+
+
 
 
 
