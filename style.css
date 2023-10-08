@@ -32,7 +32,7 @@
 /* 
 Estilo para el div separador */
 .separator {
-    height: 80px; /* Altura del separador (ajusta según sea necesario) */
+    height: 70px; /* Altura del separador (ajusta según sea necesario) */
     background-color: black; /* Color de fondo del separador */
 }
 
