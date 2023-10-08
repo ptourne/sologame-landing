@@ -1,0 +1,129 @@
+/* Make the text next to the logo bold */
+#logo-text {
+    font-weight: bold;
+}
+
+/* Change link color to Celeste (#5bdcf1) on hover */
+.navbar-nav .nav-link:hover {
+    color: #5bdcf1;
+}
+
+/* Rotate the logo 360 degrees on hover */
+#logo{
+    transition: all 1s ease;
+}
+
+#logo:hover {
+    animation: logoRotate 2s;
+    transform: rotate(360deg);
+}
+@keyframes logoRotate {
+    0%,100%{}
+    50%{
+        transform: rotate(45deg);
+    }
+}
+
+/* Increase font size and use the "Poppins" font family for links */
+.navbar-nav .nav-link {
+    font-size: 18px; /* Adjust the font size as needed */
+    font-family: "Poppins", sans-serif;
+}
+/* 
+Estilo para el div separador */
+.separator {
+    height: 80px; /* Altura del separador (ajusta según sea necesario) */
+    background-color: black; /* Color de fondo del separador */
+}
+
+
+/* Estilo para la sección Home */
+.home-section {
+    height: 95vh;
+    background: url('fondo.png') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Estilo para el contenido dentro de la sección Home */
+.content {
+    text-align: center;
+    color: white;
+}
+
+/* Estilo para el contenedor del texto y la imagen del botón */
+.button-container {
+    position: relative;
+    text-align: center;
+}
+
+/* Estilo para la imagen del botón */
+#start-button {
+    width: 200px; /* Ajusta el ancho de la imagen según sea necesario */
+    height: auto; /* Para mantener la proporción de la imagen */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar por encima */
+    transition: transform 0.3s;
+}
+
+/* Estilo para el texto sobre la imagen */
+.button-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Coloca el texto encima de la imagen */
+    color: white;
+    font-size: 18px; /* Ajusta el tamaño del texto según sea necesario */
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+}
+
+#start-button:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen en hover */
+}
+
+
+.Game{
+    height: 95vh;
+    background: url('image.webp') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+/* Estilo para la sección "Titan" */
+.Titan {
+    height: 95vh;
+    background: url('imagedistinto.webp') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+/* Estilo para el video en la sección "Titan" */
+#titan-video {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    height: 100%; /* Ocupa todo el alto disponible */
+    object-fit: cover; /* Escala el video para cubrir todo el contenedor */
+}
+
+
+/* Estilo para la sección "NASA" */
+.NASA {
+    height: 95vh;
+    background: url('imagecirculo.webp') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+/* Estilo para la sección "Titan" */
+
+
+
+
+
+
+
